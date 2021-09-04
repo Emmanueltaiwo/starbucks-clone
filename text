@@ -1,0 +1,46 @@
+<section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="logo.png" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textbox">
+                <h2>It's not Just Coffee It's<br><span>StarBucks</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    Deserunt quod repellendus quae quaerat, porro doloremque iste neque
+                     iure consequatur odit aut quis consequuntur, maxime quo alias eaque 
+                     adipisci eveniet sequi.</p>
+            <a href="#">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="img1.png" class="starbucks">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="thumb1.png" onclick="imgSlider('thumb1.png');changeCircleColor('#017143')"></li>
+            <li><img src="thumb2.png" onclick="imgSlider('thumb2.png');changeCircleColor('#d752b1')"></li>
+            <li><img src="thumb3.png" onclick="imgSlider('thumb3.png');changeCircleColor('#eb7495')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="fb.png" class="fblogo"></a></li>
+            <li><a href="#"><img src="instagram.png" class="instalogo"></a></li>
+            <li><a href="#"><img src="twitter.png" class="twitlogo"></a></li>
+        </ul>
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.starbucks').src = anything;
+        }
+
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
